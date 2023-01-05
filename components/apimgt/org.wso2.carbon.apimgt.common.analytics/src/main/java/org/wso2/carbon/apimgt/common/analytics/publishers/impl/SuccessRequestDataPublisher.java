@@ -21,6 +21,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.wso2.am.analytics.publisher.reporter.CounterMetric;
 
+import java.util.List;
+
 /**
  * Success event publisher implementation.
  */
@@ -31,5 +33,9 @@ public class SuccessRequestDataPublisher extends AbstractRequestDataPublisher {
     @Override
     public CounterMetric getCounterMetric() {
         return AnalyticsDataPublisher.getInstance().getSuccessMetricReporter();
+    }
+
+    public List<CounterMetric> getMultipleCounterMetrics() {
+        return AnalyticsDataPublisher.getInstance().getSuccessMetricReporters();
     }
 }

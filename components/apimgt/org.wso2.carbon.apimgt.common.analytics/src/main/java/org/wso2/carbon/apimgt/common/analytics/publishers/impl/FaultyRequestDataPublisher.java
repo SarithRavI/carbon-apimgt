@@ -29,7 +29,7 @@ public class FaultyRequestDataPublisher extends AbstractRequestDataPublisher {
     public CounterMetric getCounterMetric() {
         return AnalyticsDataPublisher.getInstance().getFaultyMetricReporter();
     }
-
+    @Override
     public List<CounterMetric> getMultipleCounterMetrics() {
         return AnalyticsDataPublisher.getInstance().getFaultyMetricReporters();
     }

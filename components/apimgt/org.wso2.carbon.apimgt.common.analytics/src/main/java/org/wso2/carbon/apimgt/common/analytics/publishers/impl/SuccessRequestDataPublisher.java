@@ -35,6 +35,7 @@ public class SuccessRequestDataPublisher extends AbstractRequestDataPublisher {
         return AnalyticsDataPublisher.getInstance().getSuccessMetricReporter();
     }
 
+    @Override
     public List<CounterMetric> getMultipleCounterMetrics() {
         return AnalyticsDataPublisher.getInstance().getSuccessMetricReporters();
     }

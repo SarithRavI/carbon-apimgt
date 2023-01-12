@@ -43,6 +43,7 @@
         <dependency>
             <groupId>org.wso2.am.analytics.publisher</groupId>
             <artifactId>org.wso2.am.analytics.publisher.client</artifactId>
+            <version>1.1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
